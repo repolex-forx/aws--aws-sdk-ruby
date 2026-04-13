@@ -1,0 +1,26 @@
+[2026-04-13T02:32:44Z] === ENRICH ITERATION 2 START | repo=aws/aws-sdk-ruby sha=3665106e ===
+[2026-04-13T02:32:44Z] [iter=2] PHASE START: enrich repo=aws/aws-sdk-ruby sha=3665106e runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3665106e-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3665106e009d2e46b022b00997c939b1c28fb022.nq.gz
+[2026-04-13T02:32:59Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-13T02:33:11Z] [iter=2] AST store loaded triples=1546768 load_secs=11 mem_mb=940 MB
+[2026-04-13T02:33:11Z] [iter=2] Step 2: Finding LSP targets mem_mb=940 MB
+[2026-04-13T02:33:24Z] [iter=2] LSP targets found call_sites=28152 imports=0 extends=2 implements=0 secs=13
+[2026-04-13T02:33:28Z] [iter=2] Loaded checkpoint partial graph triples=95503
+[2026-04-13T02:33:39Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=940 MB
+[2026-04-13T02:33:48Z] [iter=2] Position index built positions=99153 nodes_with_types=128565 secs=9 mem_mb=940 MB
+[2026-04-13T02:33:48Z] [iter=2] Step 3: Starting LSP resolution mem_mb=940 MB already_completed_types=[] already_completed_files=500
+[2026-04-13T02:33:48Z] [iter=2] Resolving target type target_type=call_site count=28152
+[2026-04-13T02:33:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=aws-sdk-core/features/autoscaling/step_definitions.rb
+[2026-04-13T02:34:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=14 resolved=4 errors=29 current=aws-sdk-core/lib/aws-sdk-core/ec2.rb
+[2026-04-13T02:34:52Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.1 files_done=38 resolved=12 errors=70 current=aws-sdk-core/lib/aws-sdk-core/eager_loader.rb
+[2026-04-13T02:35:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=66 resolved=18 errors=113 current=aws-sdk-core/lib/aws-sdk-core/directoryservice.rb
+[2026-04-13T02:35:52Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=99 resolved=27 errors=154 current=aws-sdk-core/lib/aws-sdk-core/iotsecuretunneling.rb
+[2026-04-13T02:36:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=137 resolved=31 errors=195 current=aws-sdk-core/lib/aws-sdk-core/kinesisanalytics.rb
+[2026-04-13T02:36:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=4.1 files_done=178 resolved=35 errors=235 current=aws-sdk-core/lib/aws-sdk-core/route53domains.rb
+[2026-04-13T02:37:24Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=4.7 files_done=220 resolved=35 errors=275 current=aws-sdk-core/lib/aws-sdk-core/rekognition.rb
+[2026-04-13T02:37:51Z] [iter=2] Target type resolved target_type=call_site resolved=36 errors=309 secs=242 mem_mb=940 MB
+[2026-04-13T02:37:51Z] [iter=2] Resolving target type target_type=extends_clause count=2
+[2026-04-13T02:37:52Z] [iter=2] Target type resolved target_type=extends_clause resolved=0 errors=0 secs=1 mem_mb=940 MB
+[2026-04-13T02:39:34Z] [iter=2] Step 5: Writing final enrichment file triples=132634
+[2026-04-13T02:39:37Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/3665106e009d2e46b022b00997c939b1c28fb022.nq.gz size_kb=3044
+[2026-04-13T02:39:37Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-04-13T02:39:37Z] [iter=2] PHASE END: enrich elapsed_s=413 elapsed_min=6.9 total_triples=132634
